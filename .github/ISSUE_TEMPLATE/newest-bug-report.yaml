@@ -17,6 +17,14 @@ body:
         Please enter a description of the issue. Here you can also attach log files, screenshots or a video
     validations:
       required: true
+  - type: input
+    id: version
+    attributes:
+      label: DBeaver Version
+      description: What version of DBeaver are you running?
+      placeholder: ex. Community Edition 22.1.0
+    validations:
+      required: true
   - type: textarea
     id: reproduction
     attributes:
@@ -30,25 +38,15 @@ body:
     validations:
       required: false
   - type: textarea
-    id: additional-context
+    id: database-driver
     attributes:
-      label: Additional context
-      description: Any additional context about the environment
+      label: What database and driver do you use?
+      description: Tell us more about the database and driver that you use.
       placeholder: |
         1. Database name and version: ex. Community Edition 22.1.0
-        2. Additional extensions: ex. Office extension, Darkest Dark extension, etc
-        3. Driver name and version: ex. PostgreSQL JDBC Driver 42.2.25
-        4. Tunnels and proxy: ex. SSH, SOCKS, etc
+        2. Driver name and version: ex. PostgreSQL JDBC Driver 42.2.25
     validations:
       required: false
-  - type: input
-    id: version
-    attributes:
-        label: DBeaver Version
-        description: What version of DBeaver are you running?
-        placeholder: ex. Community Edition 22.1.0
-    validations:
-        required: true
   - type: input
     id: os-kind
     attributes:
@@ -57,3 +55,13 @@ body:
         placeholder: ex. macOS Big Sur 11.5.2
     validations:
         required: false
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Any additional context about the environment
+      placeholder: |
+        1. Tunnels and proxy: ex. SSH, SOCKS, etc
+        2. Extensions: ex. Office extension, Darkest Dark extension, etc
+    validations:
+      required: false
