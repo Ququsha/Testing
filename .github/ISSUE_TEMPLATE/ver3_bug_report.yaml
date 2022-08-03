@@ -58,7 +58,7 @@ body:
     attributes:
       label: Driver name and version
       description: What driver and version do you use?
-                   You can check it manualy in connection settings dialog.
+                   You can check it manually in the connection settings dialog.
       placeholder: ex. Jaybird JCA/JDBC driver 4.0.0
     validations:
       required: false
