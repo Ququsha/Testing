@@ -34,6 +34,19 @@ body:
     validations:
       required: false
   - type: textarea
+    id: database-driver
+    attributes:
+      label: Database and driver
+      description: | 
+        What database and driver do you use?
+        You can check it in the connection settings dialog. 
+      placeholder: |
+        Example:
+        1. Database name and version: PostgreSQL 14.0
+        2. Driver name and version: PostgreSQL JDBC Driver 42.2.25
+    validations:
+      required: false
+  - type: textarea
     id: reproduction
     attributes:
       label: Steps to reproduce
@@ -43,17 +56,6 @@ body:
         2. With this config '...'
         3. I push the button '...'
         4. See an error '...'
-    validations:
-      required: false
-  - type: textarea
-    id: database-driver
-    attributes:
-      label: Database and driver
-      description: What database and driver do you use?
-      placeholder: |
-        Example:
-        1. Database name and version: Community Edition 22.1.0
-        2. Driver name and version: PostgreSQL JDBC Driver 42.2.25
     validations:
       required: false
   - type: textarea
