@@ -59,7 +59,7 @@ body:
       label: Driver name and version
       description: What driver and version do you use?
                    You can check it manually in the connection settings dialog.
-      placeholder: ex. Jaybird JCA/JDBC driver 4.0.0
+      placeholder: ex. PostgreSQL JDBC Driver 42.2.25
     validations:
       required: false
   - type: input
