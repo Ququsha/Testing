@@ -42,7 +42,7 @@ body:
     attributes:
       label: Additional extensions
       description: What additional extension do you use?
-      placeholder: ex. office extension, darkestdark extension, etc.
+      placeholder: ex. Office extension, Darkest Dark extension, etc.
     validations:
       required: false
   - type: input
@@ -50,7 +50,7 @@ body:
     attributes:
       label: Database name and version
       description: What database and version do you use?
-      placeholder: ex. MySQL 8.0
+      placeholder: ex. PostgreSQL 14.0
     validations:
       required: false
   - type: input
@@ -58,7 +58,8 @@ body:
     attributes:
       label: Driver name and version
       description: What driver and version do you use?
-      placeholder: example
+                   You can check it manualy in connection settings dialog.
+      placeholder: ex. Jaybird JCA/JDBC driver 4.0.0
     validations:
       required: false
   - type: input
