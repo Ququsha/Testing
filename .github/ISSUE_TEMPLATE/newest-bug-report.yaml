@@ -37,31 +37,33 @@ body:
         4. See an error '...'
     validations:
       required: false
-  - type: textarea
-    id: database-driver
-    attributes:
-      label: What database and driver do you use?
-      description: Tell us more about the database and driver that you use.
-      placeholder: |
-        1. Database name and version: ex. PostgreSQL 14.0
-        2. Driver name and version: ex. PostgreSQL JDBC Driver 42.2.25
-    validations:
-      required: false
   - type: input
     id: os-kind
     attributes:
-        label: Operating System
-        description: What an operating system do you use?
-        placeholder: ex. macOS Big Sur 11.5.2
+      label: Operating System
+      description: What an operating system do you use?
+      placeholder: ex. macOS Big Sur 11.5.2
     validations:
-        required: false
+      required: false
+  - type: textarea
+    id: database-driver
+    attributes:
+      label: Database and driver
+      description: What database and driver do you use?
+      placeholder: |
+        Example:
+        1. Database name and version: Community Edition 22.1.0
+        2. Driver name and version: PostgreSQL JDBC Driver 42.2.25
+    validations:
+      required: false
   - type: textarea
     id: additional-context
     attributes:
       label: Additional context
       description: Any additional context about the environment
       placeholder: |
-        1. Tunnels and proxy: ex. SSH, SOCKS, etc
-        2. Extensions: ex. Office extension, Darkest Dark extension, etc
+        Example:
+        1. Tunnels and proxy: SSH, SOCKS, etc
+        2. Extensions: Office extension, Darkest Dark extension, etc
     validations:
       required: false
