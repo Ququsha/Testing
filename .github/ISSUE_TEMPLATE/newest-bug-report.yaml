@@ -43,7 +43,7 @@ body:
       label: What database and driver do you use?
       description: Tell us more about the database and driver that you use.
       placeholder: |
-        1. Database name and version: ex. Community Edition 22.1.0
+        1. Database name and version: ex. PostgreSQL 14.0
         2. Driver name and version: ex. PostgreSQL JDBC Driver 42.2.25
     validations:
       required: false
