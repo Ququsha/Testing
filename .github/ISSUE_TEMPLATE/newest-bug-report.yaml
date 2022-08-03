@@ -25,6 +25,14 @@ body:
       placeholder: ex. Community Edition 22.1.0
     validations:
       required: true
+  - type: input
+    id: os-kind
+    attributes:
+      label: Operating System
+      description: What an operating system do you use?
+      placeholder: ex. macOS Big Sur 11.5.2
+    validations:
+      required: false
   - type: textarea
     id: reproduction
     attributes:
@@ -35,14 +43,6 @@ body:
         2. With this config '...'
         3. I push the button '...'
         4. See an error '...'
-    validations:
-      required: false
-  - type: input
-    id: os-kind
-    attributes:
-      label: Operating System
-      description: What an operating system do you use?
-      placeholder: ex. macOS Big Sur 11.5.2
     validations:
       required: false
   - type: textarea
