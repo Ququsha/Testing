@@ -62,7 +62,7 @@ body:
     validations:
       required: false
   - type: input
-    id: database-version
+    id: tunnels-or-proxy
     attributes:
       label: Tunnels and proxy
       description: Do you use tunnels or proxies for the database connection?
